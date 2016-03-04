@@ -1,1 +1,331 @@
+// GLOBAL WRAPPER ====================
+.siteWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+// HERO LANDING =========================
+
+.hero {
+  background-image: url("../img/backgroundImage2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  .navBar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    .links {
+      width: 80%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .motoIcon {
+        text-align: center;
+        font-size: 50px;
+        flex: 2;
+        margin: 0;
+      }
+      .link {
+        text-align: center;
+        flex: 1;
+        margin: 0;
+      }
+    }
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    margin: 0;
+    // background-color: rgba(0, 0, 0, 0.5);
+    // border-radius: 25%;
+    // width: 600px;
+    h4 {
+      margin: 0;
+      font-family: $largeText;
+      font-size: 20px;
+      color: rgba(255, 255, 255, 1);
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      // background-color: rgba(0, 0, 0, 0.5);
+    }
+    h1 {
+      margin: 10px;
+      font-family: $largeText;
+      color: rgba(255, 255, 255, 1);
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      // color: rgba(155, 209, 250, .8);
+      letter-spacing: 5px;
+      font-size: 125px;
+    }
+    .whiteBar {
+      height: 15px;
+      width: 10%;
+      background-color: white;
+      margin-bottom: 20px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+  }
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+  }
+}
+
+
+// MID-PAGE NAVBAR ========================
+.midBar {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  background-color: #f7f7f7;
+  width: 100%;
+  .midBarLinks {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .midBarLink {
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+
+
+// GALLERY SECTION =====================
+.galleryWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: $largeText;
+  .row1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .box1 {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     flex: 2;
+     background-image: url("../img/moto1.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 300px;
+     .boxIconContainer {
+       margin-top: 80px;
+       display: flex;
+       justify-content: space-around;
+       span {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+         border: 3px solid white;
+        //  background-color: rgba(15, 240, 240, .7);
+         width: 75px;
+         height: 75px;
+         color: white;
+       }
+     }
+      h5 {
+        margin: 0 20px;
+        font-family: $largeText;
+        letter-spacing: 2px;
+        font-size: 20px;
+        color: white;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+      }
+    }
+    .box2 {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     flex: 1;
+     background-image: url("../img/moto3.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 300px;
+     .boxIconContainer {
+       margin-top: 80px;
+       display: flex;
+       justify-content: space-around;
+       span {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+         background-color: rgba(255, 0, 0, .7);
+         width: 75px;
+         height: 75px;
+       }
+     }
+      h5 {
+        margin: 0 20px;
+        font-family: $largeText;
+        letter-spacing: 2px;
+        font-size: 20px;
+        color: white;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+      }
+    }
+    .box3 {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     flex: 1;
+     background-image: url("../img/moto7.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 300px;
+     .boxIconContainer {
+       margin-top: 80px;
+       display: flex;
+       justify-content: space-around;
+       span {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+         background-color: rgba(255, 0, 0, .7);
+         width: 75px;
+         height: 75px;
+       }
+     }
+      h5 {
+        margin: 0 20px;
+        font-family: $largeText;
+        letter-spacing: 2px;
+        font-size: 20px;
+        color: white;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  .row2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .box4 {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     flex: 1;
+     background-image: url("../img/moto9.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 300px;
+     .boxIconContainer {
+       margin-top: 80px;
+       display: flex;
+       justify-content: space-around;
+       span {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+         background-color: rgba(255, 0, 0, .7);
+         width: 75px;
+         height: 75px;
+       }
+     }
+      h5 {
+        margin: 0 20px;
+        font-family: $largeText;
+        letter-spacing: 2px;
+        font-size: 20px;
+        color: white;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+      }
+    }
+    .box5 {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     flex: 1;
+     background-image: url("../img/moto8.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 300px;
+     .boxIconContainer {
+       margin-top: 80px;
+       display: flex;
+       justify-content: space-around;
+       span {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+         background-color: rgba(255, 0, 0, .7);
+         width: 75px;
+         height: 75px;
+       }
+     }
+      h5 {
+        margin: 0 20px;
+        font-family: $largeText;
+        letter-spacing: 2px;
+        font-size: 20px;
+        color: white;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+      }
+    }
+    .box6 {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     flex: 2;
+     background-image: url("../img/moto2.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 300px;
+     .boxIconContainer {
+       margin-top: 80px;
+       display: flex;
+       justify-content: space-around;
+       span {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+         background-color: rgba(255, 0, 0, .7);
+         width: 75px;
+         height: 75px;
+       }
+     }
+      h5 {
+        margin: 0 20px;
+        font-family: $largeText;
+        letter-spacing: 2px;
+        font-size: 20px;
+        color: white;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
+
+// FOOTER ================================
+
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  background-color: #f7f7f7;
+  width: 100%;
+}  
