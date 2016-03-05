@@ -12,6 +12,36 @@ body {
   display: flex;
   flex-wrap: wrap; }
 
+.motoIcon {
+  animation: wheelie 2s 1s ease-in-out;
+  transform-origin: 0 100%; }
+
+@keyframes wheelie {
+  0% {
+    transform: rotate(0); }
+  10% {
+    transform: rotate(0); }
+  20% {
+    transform: rotate(-25deg); }
+  30% {
+    transform: rotate(0); }
+  40% {
+    transform: rotate(-15deg); }
+  50% {
+    transform: rotate(-7deg); }
+  75% {
+    transform: rotate(-35deg); }
+  100% {
+    transform: rotate(0); } }
+a:link {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: black; }
+  a:link:hover {
+    color: red;
+    border: 2px solid rgba(255, 0, 0, 0.7);
+    padding: 5px 10px; }
+
 .hero {
   background-image: url("../img/backgroundImage2.jpg");
   background-repeat: no-repeat;
@@ -26,33 +56,64 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20px; }
+    @media screen and (max-width: 640px) {
+      .hero .navBar {
+        justify-content: center; } }
     .hero .navBar .links {
       width: 80%;
       display: flex;
       justify-content: space-around;
       align-items: center; }
+      .hero .navBar .links .menuCollapseIcon {
+        display: none; }
+        .hero .navBar .links .menuCollapseIcon:hover {
+          color: red; }
+        @media screen and (max-width: 640px) {
+          .hero .navBar .links .menuCollapseIcon {
+            font-size: 25px;
+            text-align: center;
+            display: inline-block;
+            flex: 1;
+            margin: 0;
+            margin-left: 100px; } }
       .hero .navBar .links .motoIcon {
         text-align: center;
         font-size: 50px;
-        flex: 2;
-        margin: 0; }
+        margin: 0;
+        transition: all 500ms ease-in-out;
+        transform-origin: 0 100%;
+        margin: 0 50px; }
+        .hero .navBar .links .motoIcon:hover {
+          color: red;
+          transform: rotate(-25deg);
+          cursor: pointer; }
       .hero .navBar .links .link {
         text-align: center;
         flex: 1;
-        margin: 0; }
+        margin: 0;
+        color: black; }
+        @media screen and (max-width: 640px) {
+          .hero .navBar .links .link {
+            display: none; } }
   .hero .title {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     letter-spacing: 2px;
-    margin: 0; }
+    margin-top: 100px; }
     .hero .title h4 {
       margin: 0;
       font-family: "Raleway", sans-serif;
       font-size: 20px;
       color: white;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
+      @media screen and (max-width: 960px) {
+        .hero .title h4 {
+          font-size: 15px; } }
+      @media screen and (max-width: 640px) {
+        .hero .title h4 {
+          font-size: 20px; } }
     .hero .title h1 {
       margin: 10px;
       font-family: "Raleway", sans-serif;
@@ -60,32 +121,49 @@ body {
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
       letter-spacing: 5px;
       font-size: 125px; }
+      @media screen and (max-width: 960px) {
+        .hero .title h1 {
+          font-size: 95px; } }
+      @media screen and (max-width: 640px) {
+        .hero .title h1 {
+          font-size: 65px; } }
     .hero .title .whiteBar {
       height: 15px;
       width: 10%;
       background-color: white;
       margin-bottom: 20px;
       box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); }
+      @media screen and (max-width: 640px) {
+        .hero .title .whiteBar {
+          height: 10px;
+          width: 20%; } }
   .hero .button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 75px; }
-
-.midBar {
-  display: flex;
-  justify-content: center;
-  height: 70px;
-  background-color: #f7f7f7;
-  width: 100%; }
-  .midBar .midBarLinks {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    .midBar .midBarLinks .midBarLink {
+    margin-bottom: 50px; }
+    .hero .button span {
+      display: flex;
       text-align: center;
-      margin: 0; }
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background-color: rgba(255, 0, 0, 0.7);
+      border: 2px solid transparent;
+      transition: background-color 250ms ease-in-out; }
+      .hero .button span i {
+        color: #0ff0f0;
+        margin: 0;
+        font-size: 40px;
+        transition: transform 1s ease-in-out; }
+      .hero .button span:hover {
+        background-color: rgba(15, 240, 240, 0.5);
+        border: 3px solid rgba(255, 0, 0, 0.7);
+        cursor: pointer; }
+        .hero .button span:hover i {
+          color: rgba(255, 0, 0, 0.7);
+          transform: rotate(540deg); }
 
 .galleryWrapper {
   width: 100%;
@@ -96,6 +174,9 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row; }
+    @media screen and (max-width: 640px) {
+      .galleryWrapper .row1 {
+        flex-direction: column; } }
     .galleryWrapper .row1 .box1 {
       display: flex;
       flex-direction: column;
@@ -106,19 +187,36 @@ body {
       background-size: cover;
       background-position: center;
       height: 300px; }
+      @media screen and (max-width: 960px) {
+        .galleryWrapper .row1 .box1 {
+          flex: 1; } }
       .galleryWrapper .row1 .box1 .boxIconContainer {
         margin-top: 80px;
         display: flex;
         justify-content: space-around; }
+        @media screen and (max-width: 960px) {
+          .galleryWrapper .row1 .box1 .boxIconContainer {
+            margin: 0; } }
         .galleryWrapper .row1 .box1 .boxIconContainer span {
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 50%;
-          border: 3px solid white;
+          border: 5px solid rgba(255, 255, 255, 0.7);
+          background-color: rgba(255, 255, 255, 0.2);
           width: 75px;
           height: 75px;
-          color: white; }
+          transition: all 500ms ease-in-out; }
+          .galleryWrapper .row1 .box1 .boxIconContainer span i {
+            color: rgba(255, 0, 0, 0.7);
+            transition: all 500ms ease-in-out; }
+          .galleryWrapper .row1 .box1 .boxIconContainer span:hover {
+            border-radius: 10%;
+            border: none;
+            background-color: rgba(15, 240, 240, 0.7);
+            transform: rotate(45deg); }
+            .galleryWrapper .row1 .box1 .boxIconContainer span:hover i {
+              color: rgba(0, 0, 0, 0.5); }
       .galleryWrapper .row1 .box1 h5 {
         margin: 0 20px;
         font-family: "Raleway", sans-serif;
@@ -126,6 +224,9 @@ body {
         font-size: 20px;
         color: white;
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
+        @media screen and (max-width: 960px) {
+          .galleryWrapper .row1 .box1 h5 {
+            display: none; } }
     .galleryWrapper .row1 .box2 {
       display: flex;
       flex-direction: column;
@@ -140,14 +241,29 @@ body {
         margin-top: 80px;
         display: flex;
         justify-content: space-around; }
+        @media screen and (max-width: 960px) {
+          .galleryWrapper .row1 .box2 .boxIconContainer {
+            margin: 0; } }
         .galleryWrapper .row1 .box2 .boxIconContainer span {
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 50%;
-          background-color: rgba(255, 0, 0, 0.7);
+          border: 5px solid rgba(255, 255, 255, 0.7);
+          background-color: rgba(255, 255, 255, 0.2);
           width: 75px;
-          height: 75px; }
+          height: 75px;
+          transition: all 500ms ease-in-out; }
+          .galleryWrapper .row1 .box2 .boxIconContainer span i {
+            color: rgba(255, 0, 0, 0.7);
+            transition: all 500ms ease-in-out; }
+          .galleryWrapper .row1 .box2 .boxIconContainer span:hover {
+            border-radius: 10%;
+            border: none;
+            background-color: rgba(15, 240, 240, 0.7);
+            transform: rotate(45deg); }
+            .galleryWrapper .row1 .box2 .boxIconContainer span:hover i {
+              color: rgba(0, 0, 0, 0.5); }
       .galleryWrapper .row1 .box2 h5 {
         margin: 0 20px;
         font-family: "Raleway", sans-serif;
@@ -155,6 +271,9 @@ body {
         font-size: 20px;
         color: white;
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
+        @media screen and (max-width: 960px) {
+          .galleryWrapper .row1 .box2 h5 {
+            display: none; } }
     .galleryWrapper .row1 .box3 {
       display: flex;
       flex-direction: column;
@@ -169,14 +288,29 @@ body {
         margin-top: 80px;
         display: flex;
         justify-content: space-around; }
+        @media screen and (max-width: 960px) {
+          .galleryWrapper .row1 .box3 .boxIconContainer {
+            margin: 0; } }
         .galleryWrapper .row1 .box3 .boxIconContainer span {
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 50%;
-          background-color: rgba(255, 0, 0, 0.7);
+          border: 5px solid rgba(255, 255, 255, 0.7);
+          background-color: rgba(255, 255, 255, 0.2);
           width: 75px;
-          height: 75px; }
+          height: 75px;
+          transition: all 500ms ease-in-out; }
+          .galleryWrapper .row1 .box3 .boxIconContainer span i {
+            color: rgba(255, 0, 0, 0.7);
+            transition: all 500ms ease-in-out; }
+          .galleryWrapper .row1 .box3 .boxIconContainer span:hover {
+            border-radius: 10%;
+            border: none;
+            background-color: rgba(15, 240, 240, 0.7);
+            transform: rotate(45deg); }
+            .galleryWrapper .row1 .box3 .boxIconContainer span:hover i {
+              color: rgba(0, 0, 0, 0.5); }
       .galleryWrapper .row1 .box3 h5 {
         margin: 0 20px;
         font-family: "Raleway", sans-serif;
@@ -184,10 +318,16 @@ body {
         font-size: 20px;
         color: white;
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
+        @media screen and (max-width: 960px) {
+          .galleryWrapper .row1 .box3 h5 {
+            display: none; } }
   .galleryWrapper .row2 {
     width: 100%;
     display: flex;
     flex-direction: row; }
+    @media screen and (max-width: 640px) {
+      .galleryWrapper .row2 {
+        flex-direction: column; } }
     .galleryWrapper .row2 .box4 {
       display: flex;
       flex-direction: column;
@@ -202,14 +342,29 @@ body {
         margin-top: 80px;
         display: flex;
         justify-content: space-around; }
+        @media screen and (max-width: 960px) {
+          .galleryWrapper .row2 .box4 .boxIconContainer {
+            margin: 0; } }
         .galleryWrapper .row2 .box4 .boxIconContainer span {
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 50%;
-          background-color: rgba(255, 0, 0, 0.7);
+          border: 5px solid rgba(255, 255, 255, 0.7);
+          background-color: rgba(255, 255, 255, 0.2);
           width: 75px;
-          height: 75px; }
+          height: 75px;
+          transition: all 500ms ease-in-out; }
+          .galleryWrapper .row2 .box4 .boxIconContainer span i {
+            color: rgba(255, 0, 0, 0.7);
+            transition: all 500ms ease-in-out; }
+          .galleryWrapper .row2 .box4 .boxIconContainer span:hover {
+            border-radius: 10%;
+            border: none;
+            background-color: rgba(15, 240, 240, 0.7);
+            transform: rotate(45deg); }
+            .galleryWrapper .row2 .box4 .boxIconContainer span:hover i {
+              color: rgba(0, 0, 0, 0.5); }
       .galleryWrapper .row2 .box4 h5 {
         margin: 0 20px;
         font-family: "Raleway", sans-serif;
@@ -217,6 +372,9 @@ body {
         font-size: 20px;
         color: white;
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
+        @media screen and (max-width: 960px) {
+          .galleryWrapper .row2 .box4 h5 {
+            display: none; } }
     .galleryWrapper .row2 .box5 {
       display: flex;
       flex-direction: column;
@@ -231,14 +389,29 @@ body {
         margin-top: 80px;
         display: flex;
         justify-content: space-around; }
+        @media screen and (max-width: 960px) {
+          .galleryWrapper .row2 .box5 .boxIconContainer {
+            margin: 0; } }
         .galleryWrapper .row2 .box5 .boxIconContainer span {
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 50%;
-          background-color: rgba(255, 0, 0, 0.7);
+          border: 5px solid rgba(255, 255, 255, 0.7);
+          background-color: rgba(255, 255, 255, 0.2);
           width: 75px;
-          height: 75px; }
+          height: 75px;
+          transition: all 500ms ease-in-out; }
+          .galleryWrapper .row2 .box5 .boxIconContainer span i {
+            color: rgba(255, 0, 0, 0.7);
+            transition: all 500ms ease-in-out; }
+          .galleryWrapper .row2 .box5 .boxIconContainer span:hover {
+            border-radius: 10%;
+            border: none;
+            background-color: rgba(15, 240, 240, 0.7);
+            transform: rotate(45deg); }
+            .galleryWrapper .row2 .box5 .boxIconContainer span:hover i {
+              color: rgba(0, 0, 0, 0.5); }
       .galleryWrapper .row2 .box5 h5 {
         margin: 0 20px;
         font-family: "Raleway", sans-serif;
@@ -246,6 +419,9 @@ body {
         font-size: 20px;
         color: white;
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
+        @media screen and (max-width: 960px) {
+          .galleryWrapper .row2 .box5 h5 {
+            display: none; } }
     .galleryWrapper .row2 .box6 {
       display: flex;
       flex-direction: column;
@@ -256,18 +432,36 @@ body {
       background-size: cover;
       background-position: center;
       height: 300px; }
+      @media screen and (max-width: 960px) {
+        .galleryWrapper .row2 .box6 {
+          flex: 1; } }
       .galleryWrapper .row2 .box6 .boxIconContainer {
         margin-top: 80px;
         display: flex;
         justify-content: space-around; }
+        @media screen and (max-width: 960px) {
+          .galleryWrapper .row2 .box6 .boxIconContainer {
+            margin: 0; } }
         .galleryWrapper .row2 .box6 .boxIconContainer span {
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 50%;
-          background-color: rgba(255, 0, 0, 0.7);
+          border: 5px solid rgba(255, 255, 255, 0.7);
+          background-color: rgba(255, 255, 255, 0.2);
           width: 75px;
-          height: 75px; }
+          height: 75px;
+          transition: all 500ms ease-in-out; }
+          .galleryWrapper .row2 .box6 .boxIconContainer span i {
+            color: rgba(255, 0, 0, 0.7);
+            transition: all 500ms ease-in-out; }
+          .galleryWrapper .row2 .box6 .boxIconContainer span:hover {
+            border-radius: 10%;
+            border: none;
+            background-color: rgba(15, 240, 240, 0.7);
+            transform: rotate(45deg); }
+            .galleryWrapper .row2 .box6 .boxIconContainer span:hover i {
+              color: rgba(0, 0, 0, 0.5); }
       .galleryWrapper .row2 .box6 h5 {
         margin: 0 20px;
         font-family: "Raleway", sans-serif;
@@ -275,12 +469,20 @@ body {
         font-size: 20px;
         color: white;
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
+        @media screen and (max-width: 960px) {
+          .galleryWrapper .row2 .box6 h5 {
+            display: none; } }
 
 .footer {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 12px;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 70px;
-  background-color: #f7f7f7;
+  color: grey;
+  background-color: #10efef;
   width: 100%; }
 
 /*# sourceMappingURL=application.css.map */
