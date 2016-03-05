@@ -76,6 +76,7 @@ a:link {
       align-items: center;
       .menuCollapseIcon {
         display: none;
+        cursor: pointer;
         &:hover {
           color: rgba(255, 0, 0, 1);
         }
@@ -147,7 +148,7 @@ a:link {
         font-size: 65px;
       }
     }
-    .whiteBar {
+    .whiteLine {
       height: 15px;
       width: 10%;
       background-color: white;
@@ -178,6 +179,7 @@ a:link {
         color: rgba(15, 240, 240, 1);
         margin: 0;
         font-size: 40px;
+        transform-origin: 50% 50%;
         transition: transform 1s ease-in-out;
       }
       &:hover {
@@ -186,7 +188,7 @@ a:link {
         cursor: pointer;
         i {
           color: rgba(255, 0, 0, .7);
-          transform: rotate(540deg);
+          transform: rotate(360deg);
         }
       }
     }
@@ -243,6 +245,11 @@ a:link {
      @media screen and #{$tablet} {
        flex: 1;
      }
+     @media screen and #{$mobile} {
+       border-left: 10px solid rgba(15, 240, 240, 1);
+       border-right: 10px solid rgba(15, 240, 240, 1);
+       border-bottom: 10px solid rgba(15, 240, 240, 1);
+     }
      .boxIconContainer {
        margin-top: 80px;
        display: flex;
@@ -259,6 +266,7 @@ a:link {
          background-color: rgba(255, 255, 255, .2);
          width: 75px;
          height: 75px;
+         cursor: pointer;
          transition: all 500ms ease-in-out;
          i {
             color: rgba(255, 0, 0, .7);
@@ -273,6 +281,18 @@ a:link {
              color: rgba(0, 0, 0, .5);
             }
           }
+       }
+     }
+     .caption {
+       cursor: pointer;
+       @media screen and #{$tablet} {
+         display: none;
+       }
+       .redLine {
+         height: 5px;
+         width: 50px;
+         margin: 10px 20px;
+         background-color: rgba(255, 0, 0, .6);
        }
      }
       h5 {
@@ -297,6 +317,11 @@ a:link {
      background-size: cover;
      background-position: center;
      height: 300px;
+     @media screen and #{$mobile} {
+       border-left: 10px solid rgba(15, 240, 240, 1);
+       border-right: 10px solid rgba(15, 240, 240, 1);
+       border-bottom: 10px solid rgba(15, 240, 240, 1);
+     }
      .boxIconContainer {
        margin-top: 80px;
        display: flex;
@@ -313,6 +338,7 @@ a:link {
          background-color: rgba(255, 255, 255, .2);
          width: 75px;
          height: 75px;
+         cursor: pointer;
          transition: all 500ms ease-in-out;
          i {
             color: rgba(255, 0, 0, .7);
@@ -327,6 +353,18 @@ a:link {
              color: rgba(0, 0, 0, .5);
             }
           }
+       }
+     }
+     .caption {
+       cursor: pointer;
+       @media screen and #{$tablet} {
+         display: none;
+       }
+       .redLine {
+         height: 5px;
+         width: 50px;
+         margin: 10px 20px;
+         background-color: rgba(255, 0, 0, .6);
        }
      }
       h5 {
@@ -351,6 +389,11 @@ a:link {
      background-size: cover;
      background-position: center;
      height: 300px;
+     @media screen and #{$mobile} {
+       border-left: 10px solid rgba(15, 240, 240, 1);
+       border-right: 10px solid rgba(15, 240, 240, 1);
+       border-bottom: 10px solid rgba(15, 240, 240, 1);
+     }
      .boxIconContainer {
        margin-top: 80px;
        display: flex;
@@ -367,6 +410,7 @@ a:link {
          background-color: rgba(255, 255, 255, .2);
          width: 75px;
          height: 75px;
+         cursor: pointer;
          transition: all 500ms ease-in-out;
          i {
             color: rgba(255, 0, 0, .7);
@@ -381,6 +425,18 @@ a:link {
              color: rgba(0, 0, 0, .5);
             }
           }
+       }
+     }
+     .caption {
+       cursor: pointer;
+       @media screen and #{$tablet} {
+         display: none;
+       }
+       .redLine {
+         height: 5px;
+         width: 50px;
+         margin: 10px 20px;
+         background-color: rgba(255, 0, 0, .6);
        }
      }
       h5 {
@@ -413,6 +469,11 @@ a:link {
      background-size: cover;
      background-position: center;
      height: 300px;
+     @media screen and #{$mobile} {
+       border-left: 10px solid rgba(15, 240, 240, 1);
+       border-right: 10px solid rgba(15, 240, 240, 1);
+       border-bottom: 10px solid rgba(15, 240, 240, 1);
+     }
      .boxIconContainer {
        margin-top: 80px;
        display: flex;
@@ -429,6 +490,7 @@ a:link {
          background-color: rgba(255, 255, 255, .2);
          width: 75px;
          height: 75px;
+         cursor: pointer;
          transition: all 500ms ease-in-out;
          i {
             color: rgba(255, 0, 0, .7);
@@ -443,6 +505,18 @@ a:link {
              color: rgba(0, 0, 0, .5);
             }
           }
+       }
+     }
+     .caption {
+       cursor: pointer;
+       @media screen and #{$tablet} {
+         display: none;
+       }
+       .redLine {
+         height: 5px;
+         width: 50px;
+         margin: 10px 20px;
+         background-color: rgba(255, 0, 0, .6);
        }
      }
       h5 {
@@ -467,6 +541,11 @@ a:link {
      background-size: cover;
      background-position: center;
      height: 300px;
+     @media screen and #{$mobile} {
+       border-left: 10px solid rgba(15, 240, 240, 1);
+       border-right: 10px solid rgba(15, 240, 240, 1);
+       border-bottom: 10px solid rgba(15, 240, 240, 1);
+     }
      .boxIconContainer {
        margin-top: 80px;
        display: flex;
@@ -483,6 +562,7 @@ a:link {
          background-color: rgba(255, 255, 255, .2);
          width: 75px;
          height: 75px;
+         cursor: pointer;
          transition: all 500ms ease-in-out;
          i {
             color: rgba(255, 0, 0, .7);
@@ -497,6 +577,18 @@ a:link {
              color: rgba(0, 0, 0, .5);
             }
           }
+       }
+     }
+     .caption {
+       cursor: pointer;
+       @media screen and #{$tablet} {
+         display: none;
+       }
+       .redLine {
+         height: 5px;
+         width: 50px;
+         margin: 10px 20px;
+         background-color: rgba(255, 0, 0, .6);
        }
      }
       h5 {
@@ -524,6 +616,10 @@ a:link {
      @media screen and #{$tablet} {
        flex: 1;
      }
+     @media screen and #{$mobile} {
+       border-left: 10px solid rgba(15, 240, 240, 1);
+       border-right: 10px solid rgba(15, 240, 240, 1);
+     }
      .boxIconContainer {
        margin-top: 80px;
        display: flex;
@@ -540,6 +636,7 @@ a:link {
          background-color: rgba(255, 255, 255, .2);
          width: 75px;
          height: 75px;
+         cursor: pointer;
          transition: all 500ms ease-in-out;
          i {
             color: rgba(255, 0, 0, .7);
@@ -554,6 +651,18 @@ a:link {
              color: rgba(0, 0, 0, .5);
             }
           }
+       }
+     }
+     .caption {
+       cursor: pointer;
+       @media screen and #{$tablet} {
+         display: none;
+       }
+       .redLine {
+         height: 5px;
+         width: 50px;
+         margin: 10px 20px;
+         background-color: rgba(255, 0, 0, .6);
        }
      }
       h5 {
