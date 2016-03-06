@@ -1,3 +1,132 @@
+.galleryWrapper .row1 .box1, .galleryWrapper .row2 .box6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px; }
+  @media screen and (max-width: 960px) {
+    .galleryWrapper .row1 .box1, .galleryWrapper .row2 .box6 {
+      flex: 1; } }
+  @media screen and (max-width: 640px) {
+    .galleryWrapper .row1 .box1, .galleryWrapper .row2 .box6 {
+      border-left: 10px solid #0ff0f0;
+      border-right: 10px solid #0ff0f0;
+      border-bottom: 10px solid #0ff0f0; } }
+  .galleryWrapper .row1 .box1 .boxIconContainer, .galleryWrapper .row2 .box6 .boxIconContainer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around; }
+    @media screen and (max-width: 960px) {
+      .galleryWrapper .row1 .box1 .boxIconContainer, .galleryWrapper .row2 .box6 .boxIconContainer {
+        margin: 0; } }
+    .galleryWrapper .row1 .box1 .boxIconContainer span, .galleryWrapper .row2 .box6 .boxIconContainer span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 5px solid rgba(255, 255, 255, 0.7);
+      background-color: rgba(255, 255, 255, 0.2);
+      width: 75px;
+      height: 75px;
+      cursor: pointer;
+      transition: all 500ms ease-in-out; }
+      .galleryWrapper .row1 .box1 .boxIconContainer span i, .galleryWrapper .row2 .box6 .boxIconContainer span i {
+        color: rgba(255, 0, 0, 0.7);
+        transition: all 500ms ease-in-out; }
+      .galleryWrapper .row1 .box1 .boxIconContainer span:hover, .galleryWrapper .row2 .box6 .boxIconContainer span:hover {
+        border-radius: 10%;
+        border: none;
+        background-color: rgba(15, 240, 240, 0.7);
+        transform: rotate(45deg); }
+        .galleryWrapper .row1 .box1 .boxIconContainer span:hover i, .galleryWrapper .row2 .box6 .boxIconContainer span:hover i {
+          color: rgba(0, 0, 0, 0.5); }
+  .galleryWrapper .row1 .box1 .caption, .galleryWrapper .row2 .box6 .caption {
+    cursor: pointer; }
+    @media screen and (max-width: 960px) {
+      .galleryWrapper .row1 .box1 .caption, .galleryWrapper .row2 .box6 .caption {
+        display: none; } }
+    .galleryWrapper .row1 .box1 .caption .redLine, .galleryWrapper .row2 .box6 .caption .redLine {
+      height: 5px;
+      width: 25px;
+      margin: 3px 20px;
+      background-color: rgba(255, 0, 0, 0.6); }
+  .galleryWrapper .row1 .box1 h5, .galleryWrapper .row2 .box6 h5 {
+    margin: 0 20px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
+    @media screen and (max-width: 960px) {
+      .galleryWrapper .row1 .box1 h5, .galleryWrapper .row2 .box6 h5 {
+        display: none; } }
+
+.galleryWrapper .row1 .box2, .galleryWrapper .row1 .box3, .galleryWrapper .row2 .box4, .galleryWrapper .row2 .box5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px; }
+  @media screen and (max-width: 640px) {
+    .galleryWrapper .row1 .box2, .galleryWrapper .row1 .box3, .galleryWrapper .row2 .box4, .galleryWrapper .row2 .box5 {
+      border-left: 10px solid #0ff0f0;
+      border-right: 10px solid #0ff0f0;
+      border-bottom: 10px solid #0ff0f0; } }
+  .galleryWrapper .row1 .box2 .boxIconContainer, .galleryWrapper .row1 .box3 .boxIconContainer, .galleryWrapper .row2 .box4 .boxIconContainer, .galleryWrapper .row2 .box5 .boxIconContainer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around; }
+    @media screen and (max-width: 960px) {
+      .galleryWrapper .row1 .box2 .boxIconContainer, .galleryWrapper .row1 .box3 .boxIconContainer, .galleryWrapper .row2 .box4 .boxIconContainer, .galleryWrapper .row2 .box5 .boxIconContainer {
+        margin: 0; } }
+    .galleryWrapper .row1 .box2 .boxIconContainer span, .galleryWrapper .row1 .box3 .boxIconContainer span, .galleryWrapper .row2 .box4 .boxIconContainer span, .galleryWrapper .row2 .box5 .boxIconContainer span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 5px solid rgba(255, 255, 255, 0.7);
+      background-color: rgba(255, 255, 255, 0.2);
+      width: 75px;
+      height: 75px;
+      cursor: pointer;
+      transition: all 500ms ease-in-out; }
+      .galleryWrapper .row1 .box2 .boxIconContainer span i, .galleryWrapper .row1 .box3 .boxIconContainer span i, .galleryWrapper .row2 .box4 .boxIconContainer span i, .galleryWrapper .row2 .box5 .boxIconContainer span i {
+        color: rgba(255, 0, 0, 0.7);
+        transition: all 500ms ease-in-out; }
+      .galleryWrapper .row1 .box2 .boxIconContainer span:hover, .galleryWrapper .row1 .box3 .boxIconContainer span:hover, .galleryWrapper .row2 .box4 .boxIconContainer span:hover, .galleryWrapper .row2 .box5 .boxIconContainer span:hover {
+        border-radius: 10%;
+        border: none;
+        background-color: rgba(15, 240, 240, 0.7);
+        transform: rotate(45deg); }
+        .galleryWrapper .row1 .box2 .boxIconContainer span:hover i, .galleryWrapper .row1 .box3 .boxIconContainer span:hover i, .galleryWrapper .row2 .box4 .boxIconContainer span:hover i, .galleryWrapper .row2 .box5 .boxIconContainer span:hover i {
+          color: rgba(0, 0, 0, 0.5); }
+  .galleryWrapper .row1 .box2 .caption, .galleryWrapper .row1 .box3 .caption, .galleryWrapper .row2 .box4 .caption, .galleryWrapper .row2 .box5 .caption {
+    cursor: pointer; }
+    @media screen and (max-width: 960px) {
+      .galleryWrapper .row1 .box2 .caption, .galleryWrapper .row1 .box3 .caption, .galleryWrapper .row2 .box4 .caption, .galleryWrapper .row2 .box5 .caption {
+        display: none; } }
+    .galleryWrapper .row1 .box2 .caption .redLine, .galleryWrapper .row1 .box3 .caption .redLine, .galleryWrapper .row2 .box4 .caption .redLine, .galleryWrapper .row2 .box5 .caption .redLine {
+      height: 5px;
+      width: 25px;
+      margin: 3px 20px;
+      background-color: rgba(255, 0, 0, 0.6); }
+  .galleryWrapper .row1 .box2 h5, .galleryWrapper .row1 .box3 h5, .galleryWrapper .row2 .box4 h5, .galleryWrapper .row2 .box5 h5 {
+    margin: 0 20px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
+    @media screen and (max-width: 960px) {
+      .galleryWrapper .row1 .box2 h5, .galleryWrapper .row1 .box3 h5, .galleryWrapper .row2 .box4 h5, .galleryWrapper .row2 .box5 h5 {
+        display: none; } }
+
 *,
 *::before,
 *::after {
@@ -180,197 +309,11 @@ a:link {
       .galleryWrapper .row1 {
         flex-direction: column; } }
     .galleryWrapper .row1 .box1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      flex: 2;
-      background-image: url("../img/moto1.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 300px; }
-      @media screen and (max-width: 960px) {
-        .galleryWrapper .row1 .box1 {
-          flex: 1; } }
-      @media screen and (max-width: 640px) {
-        .galleryWrapper .row1 .box1 {
-          border-left: 10px solid #0ff0f0;
-          border-right: 10px solid #0ff0f0;
-          border-bottom: 10px solid #0ff0f0; } }
-      .galleryWrapper .row1 .box1 .boxIconContainer {
-        margin-top: 80px;
-        display: flex;
-        justify-content: space-around; }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row1 .box1 .boxIconContainer {
-            margin: 0; } }
-        .galleryWrapper .row1 .box1 .boxIconContainer span {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 50%;
-          border: 5px solid rgba(255, 255, 255, 0.7);
-          background-color: rgba(255, 255, 255, 0.2);
-          width: 75px;
-          height: 75px;
-          cursor: pointer;
-          transition: all 500ms ease-in-out; }
-          .galleryWrapper .row1 .box1 .boxIconContainer span i {
-            color: rgba(255, 0, 0, 0.7);
-            transition: all 500ms ease-in-out; }
-          .galleryWrapper .row1 .box1 .boxIconContainer span:hover {
-            border-radius: 10%;
-            border: none;
-            background-color: rgba(15, 240, 240, 0.7);
-            transform: rotate(45deg); }
-            .galleryWrapper .row1 .box1 .boxIconContainer span:hover i {
-              color: rgba(0, 0, 0, 0.5); }
-      .galleryWrapper .row1 .box1 .caption {
-        cursor: pointer; }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row1 .box1 .caption {
-            display: none; } }
-        .galleryWrapper .row1 .box1 .caption .redLine {
-          height: 5px;
-          width: 25px;
-          margin: 3px 20px;
-          background-color: rgba(255, 0, 0, 0.6); }
-      .galleryWrapper .row1 .box1 h5 {
-        margin: 0 20px;
-        font-family: "Raleway", sans-serif;
-        letter-spacing: 2px;
-        font-size: 20px;
-        color: white;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row1 .box1 h5 {
-            display: none; } }
+      background-image: url("../img/moto1.jpg"); }
     .galleryWrapper .row1 .box2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      flex: 1;
-      background-image: url("../img/moto3.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 300px; }
-      @media screen and (max-width: 640px) {
-        .galleryWrapper .row1 .box2 {
-          border-left: 10px solid #0ff0f0;
-          border-right: 10px solid #0ff0f0;
-          border-bottom: 10px solid #0ff0f0; } }
-      .galleryWrapper .row1 .box2 .boxIconContainer {
-        margin-top: 80px;
-        display: flex;
-        justify-content: space-around; }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row1 .box2 .boxIconContainer {
-            margin: 0; } }
-        .galleryWrapper .row1 .box2 .boxIconContainer span {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 50%;
-          border: 5px solid rgba(255, 255, 255, 0.7);
-          background-color: rgba(255, 255, 255, 0.2);
-          width: 75px;
-          height: 75px;
-          cursor: pointer;
-          transition: all 500ms ease-in-out; }
-          .galleryWrapper .row1 .box2 .boxIconContainer span i {
-            color: rgba(255, 0, 0, 0.7);
-            transition: all 500ms ease-in-out; }
-          .galleryWrapper .row1 .box2 .boxIconContainer span:hover {
-            border-radius: 10%;
-            border: none;
-            background-color: rgba(15, 240, 240, 0.7);
-            transform: rotate(45deg); }
-            .galleryWrapper .row1 .box2 .boxIconContainer span:hover i {
-              color: rgba(0, 0, 0, 0.5); }
-      .galleryWrapper .row1 .box2 .caption {
-        cursor: pointer; }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row1 .box2 .caption {
-            display: none; } }
-        .galleryWrapper .row1 .box2 .caption .redLine {
-          height: 5px;
-          width: 25px;
-          margin: 3px 20px;
-          background-color: rgba(255, 0, 0, 0.6); }
-      .galleryWrapper .row1 .box2 h5 {
-        margin: 0 20px;
-        font-family: "Raleway", sans-serif;
-        letter-spacing: 2px;
-        font-size: 20px;
-        color: white;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row1 .box2 h5 {
-            display: none; } }
+      background-image: url("../img/moto3.jpg"); }
     .galleryWrapper .row1 .box3 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      flex: 1;
-      background-image: url("../img/moto7.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 300px; }
-      @media screen and (max-width: 640px) {
-        .galleryWrapper .row1 .box3 {
-          border-left: 10px solid #0ff0f0;
-          border-right: 10px solid #0ff0f0;
-          border-bottom: 10px solid #0ff0f0; } }
-      .galleryWrapper .row1 .box3 .boxIconContainer {
-        margin-top: 80px;
-        display: flex;
-        justify-content: space-around; }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row1 .box3 .boxIconContainer {
-            margin: 0; } }
-        .galleryWrapper .row1 .box3 .boxIconContainer span {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 50%;
-          border: 5px solid rgba(255, 255, 255, 0.7);
-          background-color: rgba(255, 255, 255, 0.2);
-          width: 75px;
-          height: 75px;
-          cursor: pointer;
-          transition: all 500ms ease-in-out; }
-          .galleryWrapper .row1 .box3 .boxIconContainer span i {
-            color: rgba(255, 0, 0, 0.7);
-            transition: all 500ms ease-in-out; }
-          .galleryWrapper .row1 .box3 .boxIconContainer span:hover {
-            border-radius: 10%;
-            border: none;
-            background-color: rgba(15, 240, 240, 0.7);
-            transform: rotate(45deg); }
-            .galleryWrapper .row1 .box3 .boxIconContainer span:hover i {
-              color: rgba(0, 0, 0, 0.5); }
-      .galleryWrapper .row1 .box3 .caption {
-        cursor: pointer; }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row1 .box3 .caption {
-            display: none; } }
-        .galleryWrapper .row1 .box3 .caption .redLine {
-          height: 5px;
-          width: 25px;
-          margin: 3px 20px;
-          background-color: rgba(255, 0, 0, 0.6); }
-      .galleryWrapper .row1 .box3 h5 {
-        margin: 0 20px;
-        font-family: "Raleway", sans-serif;
-        letter-spacing: 2px;
-        font-size: 20px;
-        color: white;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row1 .box3 h5 {
-            display: none; } }
+      background-image: url("../img/moto7.jpg"); }
   .galleryWrapper .row2 {
     width: 100%;
     display: flex;
@@ -379,196 +322,11 @@ a:link {
       .galleryWrapper .row2 {
         flex-direction: column; } }
     .galleryWrapper .row2 .box4 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      flex: 1;
-      background-image: url("../img/moto9.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 300px; }
-      @media screen and (max-width: 640px) {
-        .galleryWrapper .row2 .box4 {
-          border-left: 10px solid #0ff0f0;
-          border-right: 10px solid #0ff0f0;
-          border-bottom: 10px solid #0ff0f0; } }
-      .galleryWrapper .row2 .box4 .boxIconContainer {
-        margin-top: 80px;
-        display: flex;
-        justify-content: space-around; }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row2 .box4 .boxIconContainer {
-            margin: 0; } }
-        .galleryWrapper .row2 .box4 .boxIconContainer span {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 50%;
-          border: 5px solid rgba(255, 255, 255, 0.7);
-          background-color: rgba(255, 255, 255, 0.2);
-          width: 75px;
-          height: 75px;
-          cursor: pointer;
-          transition: all 500ms ease-in-out; }
-          .galleryWrapper .row2 .box4 .boxIconContainer span i {
-            color: rgba(255, 0, 0, 0.7);
-            transition: all 500ms ease-in-out; }
-          .galleryWrapper .row2 .box4 .boxIconContainer span:hover {
-            border-radius: 10%;
-            border: none;
-            background-color: rgba(15, 240, 240, 0.7);
-            transform: rotate(45deg); }
-            .galleryWrapper .row2 .box4 .boxIconContainer span:hover i {
-              color: rgba(0, 0, 0, 0.5); }
-      .galleryWrapper .row2 .box4 .caption {
-        cursor: pointer; }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row2 .box4 .caption {
-            display: none; } }
-        .galleryWrapper .row2 .box4 .caption .redLine {
-          height: 5px;
-          width: 25px;
-          margin: 3px 20px;
-          background-color: rgba(255, 0, 0, 0.6); }
-      .galleryWrapper .row2 .box4 h5 {
-        margin: 0 20px;
-        font-family: "Raleway", sans-serif;
-        letter-spacing: 2px;
-        font-size: 20px;
-        color: white;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row2 .box4 h5 {
-            display: none; } }
+      background-image: url("../img/moto9.jpg"); }
     .galleryWrapper .row2 .box5 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      flex: 1;
-      background-image: url("../img/moto8.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 300px; }
-      @media screen and (max-width: 640px) {
-        .galleryWrapper .row2 .box5 {
-          border-left: 10px solid #0ff0f0;
-          border-right: 10px solid #0ff0f0;
-          border-bottom: 10px solid #0ff0f0; } }
-      .galleryWrapper .row2 .box5 .boxIconContainer {
-        margin-top: 80px;
-        display: flex;
-        justify-content: space-around; }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row2 .box5 .boxIconContainer {
-            margin: 0; } }
-        .galleryWrapper .row2 .box5 .boxIconContainer span {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 50%;
-          border: 5px solid rgba(255, 255, 255, 0.7);
-          background-color: rgba(255, 255, 255, 0.2);
-          width: 75px;
-          height: 75px;
-          cursor: pointer;
-          transition: all 500ms ease-in-out; }
-          .galleryWrapper .row2 .box5 .boxIconContainer span i {
-            color: rgba(255, 0, 0, 0.7);
-            transition: all 500ms ease-in-out; }
-          .galleryWrapper .row2 .box5 .boxIconContainer span:hover {
-            border-radius: 10%;
-            border: none;
-            background-color: rgba(15, 240, 240, 0.7);
-            transform: rotate(45deg); }
-            .galleryWrapper .row2 .box5 .boxIconContainer span:hover i {
-              color: rgba(0, 0, 0, 0.5); }
-      .galleryWrapper .row2 .box5 .caption {
-        cursor: pointer; }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row2 .box5 .caption {
-            display: none; } }
-        .galleryWrapper .row2 .box5 .caption .redLine {
-          height: 5px;
-          width: 25px;
-          margin: 3px 20px;
-          background-color: rgba(255, 0, 0, 0.6); }
-      .galleryWrapper .row2 .box5 h5 {
-        margin: 0 20px;
-        font-family: "Raleway", sans-serif;
-        letter-spacing: 2px;
-        font-size: 20px;
-        color: white;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row2 .box5 h5 {
-            display: none; } }
+      background-image: url("../img/moto8.jpg"); }
     .galleryWrapper .row2 .box6 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      flex: 2;
-      background-image: url("../img/moto2.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 300px; }
-      @media screen and (max-width: 960px) {
-        .galleryWrapper .row2 .box6 {
-          flex: 1; } }
-      @media screen and (max-width: 640px) {
-        .galleryWrapper .row2 .box6 {
-          border-left: 10px solid #0ff0f0;
-          border-right: 10px solid #0ff0f0; } }
-      .galleryWrapper .row2 .box6 .boxIconContainer {
-        margin-top: 80px;
-        display: flex;
-        justify-content: space-around; }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row2 .box6 .boxIconContainer {
-            margin: 0; } }
-        .galleryWrapper .row2 .box6 .boxIconContainer span {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 50%;
-          border: 5px solid rgba(255, 255, 255, 0.7);
-          background-color: rgba(255, 255, 255, 0.2);
-          width: 75px;
-          height: 75px;
-          cursor: pointer;
-          transition: all 500ms ease-in-out; }
-          .galleryWrapper .row2 .box6 .boxIconContainer span i {
-            color: rgba(255, 0, 0, 0.7);
-            transition: all 500ms ease-in-out; }
-          .galleryWrapper .row2 .box6 .boxIconContainer span:hover {
-            border-radius: 10%;
-            border: none;
-            background-color: rgba(15, 240, 240, 0.7);
-            transform: rotate(45deg); }
-            .galleryWrapper .row2 .box6 .boxIconContainer span:hover i {
-              color: rgba(0, 0, 0, 0.5); }
-      .galleryWrapper .row2 .box6 .caption {
-        cursor: pointer; }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row2 .box6 .caption {
-            display: none; } }
-        .galleryWrapper .row2 .box6 .caption .redLine {
-          height: 5px;
-          width: 25px;
-          margin: 3px 20px;
-          background-color: rgba(255, 0, 0, 0.6); }
-      .galleryWrapper .row2 .box6 h5 {
-        margin: 0 20px;
-        font-family: "Raleway", sans-serif;
-        letter-spacing: 2px;
-        font-size: 20px;
-        color: white;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
-        @media screen and (max-width: 960px) {
-          .galleryWrapper .row2 .box6 h5 {
-            display: none; } }
+      background-image: url("../img/moto2.jpg"); }
 
 .footer {
   font-family: "Roboto", sans-serif;

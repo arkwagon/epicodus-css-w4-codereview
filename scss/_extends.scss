@@ -1,0 +1,146 @@
+%featuredBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  @media screen and #{$tablet} {
+    flex: 1;
+  }
+  @media screen and #{$mobile} {
+    border-left: 10px solid rgba(15, 240, 240, 1);
+    border-right: 10px solid rgba(15, 240, 240, 1);
+    border-bottom: 10px solid rgba(15, 240, 240, 1);
+  }
+  .boxIconContainer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    @media screen and #{$tablet} {
+      margin: 0;
+    }
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 5px solid rgba(255, 255, 255, .7);
+      background-color: rgba(255, 255, 255, .2);
+      width: 75px;
+      height: 75px;
+      cursor: pointer;
+      transition: all 500ms ease-in-out;
+      i {
+         color: rgba(255, 0, 0, .7);
+         transition: all 500ms ease-in-out;
+      }
+      &:hover {
+        border-radius: 10%;
+        border: none;
+        background-color: rgba(15, 240, 240, .7);
+        transform: rotate(45deg);
+        i {
+          color: rgba(0, 0, 0, .5);
+         }
+       }
+    }
+  }
+  .caption {
+    cursor: pointer;
+    @media screen and #{$tablet} {
+      display: none;
+    }
+    .redLine {
+      height: 5px;
+      width: 25px;
+      margin: 3px 20px;
+      background-color: rgba(255, 0, 0, .6);
+    }
+  }
+   h5 {
+     margin: 0 20px;
+     font-family: $largeText;
+     letter-spacing: 2px;
+     font-size: 20px;
+     color: white;
+     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+     @media screen and #{$tablet} {
+       display: none;
+     }
+   }
+}
+
+%subBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  @media screen and #{$mobile} {
+    border-left: 10px solid rgba(15, 240, 240, 1);
+    border-right: 10px solid rgba(15, 240, 240, 1);
+    border-bottom: 10px solid rgba(15, 240, 240, 1);
+  }
+  .boxIconContainer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    @media screen and #{$tablet} {
+      margin: 0;
+    }
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 5px solid rgba(255, 255, 255, .7);
+      background-color: rgba(255, 255, 255, .2);
+      width: 75px;
+      height: 75px;
+      cursor: pointer;
+      transition: all 500ms ease-in-out;
+      i {
+         color: rgba(255, 0, 0, .7);
+         transition: all 500ms ease-in-out;
+      }
+      &:hover {
+        border-radius: 10%;
+        border: none;
+        background-color: rgba(15, 240, 240, .7);
+        transform: rotate(45deg);
+        i {
+          color: rgba(0, 0, 0, .5);
+         }
+       }
+    }
+  }
+  .caption {
+    cursor: pointer;
+    @media screen and #{$tablet} {
+      display: none;
+    }
+    .redLine {
+      height: 5px;
+      width: 25px;
+      margin: 3px 20px;
+      background-color: rgba(255, 0, 0, .6);
+    }
+  }
+   h5 {
+     margin: 0 20px;
+     font-family: $largeText;
+     letter-spacing: 2px;
+     font-size: 20px;
+     color: white;
+     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+     @media screen and #{$tablet} {
+       display: none;
+     }
+   }
+}
