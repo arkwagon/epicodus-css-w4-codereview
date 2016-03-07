@@ -162,14 +162,16 @@ body {
     transform: rotate(-35deg); }
   100% {
     transform: rotate(0); } }
-a:link {
+a {
   font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  color: black; }
-  a:link:hover {
+  text-decoration: none; }
+  a:hover {
     color: red;
     border: 2px solid rgba(255, 0, 0, 0.7);
     padding: 5px 10px; }
+
+a:visited, a:link {
+  color: black; }
 
 .hero {
   background-image: url("../img/backgroundImage2.jpg");
@@ -196,7 +198,7 @@ a:link {
       .hero .navBar .links .menuCollapseIcon {
         display: none;
         cursor: pointer; }
-        .hero .navBar .links .menuCollapseIcon:hover {
+        .hero .navBar .links .menuCollapseIcon:hover, .hero .navBar .links .menuCollapseIcon:visited {
           color: red; }
         @media screen and (max-width: 640px) {
           .hero .navBar .links .menuCollapseIcon {
